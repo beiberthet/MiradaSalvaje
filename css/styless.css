@@ -1,0 +1,364 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,300&display=swap');
+*{
+    /* font-family: 'Montserrat', sans-serif; */
+font-family: 'Poppins', sans-serif;
+padding: 5px;
+margin: 5px;
+}
+h1{
+    padding: 10px;
+    font-size: 35px;
+}
+p{
+    font-size: 20px;
+}
+h2{
+    font-size: 35;
+}
+figcaption{
+    font-size: 20px;
+}
+
+/* nav + logo */
+nav a img{
+    width: 90px;
+    height: 90px;
+}
+nav{
+  /*  height: ;*/
+    position: fixed;
+    width: 100%;
+    height: 90px;
+    background-color: rgba(142, 97, 63, 0.8);
+    padding: 4px 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+}
+nav ul{
+    list-style: none;
+    /* display: inline-block; */
+    display: flex;
+}
+nav ul li{
+    margin-right: 25px;
+}
+nav ul li a{
+    color: rgb(247, 237, 217);
+    text-decoration: none;
+    font-size: 20px;
+}
+
+/* imagenes */
+figure img:hover{
+
+    transform: scale(1.1);
+    box-shadow: 5px 5px 5px rgb(171, 128, 103);}
+
+header img{
+    width: 100%;
+    height: 900px;
+}
+.container{
+    padding-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: baseline;
+}
+.container figure{ 
+    width: 25%;
+}
+.container figure img{
+    height: 440px;
+        width: 100%;
+        border-top-right-radius: 2px;
+        border-top-left-radius:42px ;
+   }
+   .container figure figcaption{
+    padding-top: 10px;
+   }
+.container figure p{
+    line-height: 20px;
+    margin-bottom: 20px;
+    color: rgb(0, 0, 0);
+}
+.container figure img{
+    size: 25%;
+    /* width: 400px;
+    height: 500px; */
+}
+/* comienza footer */
+footer{
+    background-color: rgb(142, 97, 63);
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+    
+footer div h3{
+    text-decoration: underline;
+}
+footer div img{
+    /* padding-right: 30px; */
+    width: 35px;
+    height: 35px;
+    margin-right: 20px;
+
+}
+
+/* home mail */
+.mail{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between
+}
+
+.mail form{
+    padding: 30px;
+    width: 100%;
+    background-color: rgb(142, 97, 63); 
+    border-top-left-radius: 42px ;
+}
+.mail form input{
+    margin-bottom: 20px;
+    width: 100%;
+    height: 30px;
+    border-top-left-radius: 15px;
+    border: none;
+}
+/* faq contacto */
+.contacto{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between
+}
+
+.contacto form{
+    padding: 30px;
+    width: 40%;
+    background-color: rgb(142, 97, 63);
+    border-top-left-radius: 42px ;
+}
+
+form label{
+        color: rgb(21, 21, 21);
+        display: block;
+        margin-bottom: 4px
+}
+
+form input{
+        margin-bottom: 20px;
+        width: 100%;
+        height: 30px;
+        border-top-left-radius: 15px;
+        border: none;
+}
+
+form textarea{
+        width: 100%;
+        border: none;
+       border-top-left-radius: 32px;
+        margin-bottom: 20px;
+}
+
+/* comienza destinos */
+.destinos{
+    padding-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: baseline;
+}
+.destinos figure{
+    padding: 10px;
+    width: 30%;
+}
+.destinos figure img{
+    /* height: 300px; */
+    width: 100%;
+    border-top-right-radius: 2px;
+    border-top-left-radius:42px ;
+}
+.destinos figure p{
+    line-height: 20px;
+    margin-bottom: 20px;
+}
+.destinos figure img{
+    width: 350px;
+    height: 350px; 
+
+}
+.destinos figcaption{
+    padding-top: 10px;
+}
+.destinos  figure a{
+    text-decoration: none;
+    color: rgb(23, 22, 22);
+    background-color: rgb(142, 97, 63);
+    padding: 10px;
+    border-radius: 3px;
+    margin-top: 10px;
+}
+/* Comienza Excursiones */
+.excursiones{
+    padding-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: baseline;
+}
+.excursiones figure{
+    width: 30%;
+}
+.excursiones figure img{
+    width: 100%;
+        border-top-right-radius: 2px;
+        border-top-left-radius:42px ;
+}
+.excursiones figure p{
+    line-height: 20px;
+    margin-bottom: 20px;
+
+}
+.excursiones figure img{
+    width: 350px;
+    height: 350px;
+}
+.excursiones figcaption{
+    padding-top: 10px;
+}
+ /* galeria */
+
+/* .galeria img:hover{
+
+    transform: scale(1.1);
+    /* box-shadow: 5px 5px 5px white;}*/ 
+ 
+.galeria{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(5, 30vh);
+    grid-template-areas:
+    "foto-a foto-b foto-c"
+    "foto-d foto-e foto-e"
+    "foto-g foto-g foto-f"
+    "foto-i foto-h foto-h"
+    "foto-j foto-k foto-l"
+    
+}
+.galeria .foto-a{
+    grid-area: foto-a;
+}
+.galeria .foto-b{
+    grid-area: foto-b;
+}
+.galeria .foto-c{
+    grid-area: foto-c;
+}
+.galeria .foto-d{
+    grid-area: foto-d;
+}
+.galeria .foto-e{
+    grid-area: foto-e;
+}
+.galeria .foto-f{
+    grid-area: foto-f;
+}
+/* 2 */
+.galeria .foto-g{
+    grid-area: foto-g;
+}
+.galeria .foto-h{
+    grid-area: foto-h;
+}
+.galeria .foto-i{
+    grid-area: foto-i;
+}
+.galeria .foto-j{
+    grid-area: foto-j;
+}
+.galeria .foto-k{
+    grid-area: foto-k;
+}
+.galeria .foto-l{
+    grid-area: foto-l;
+}
+
+.galeria img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    /* filter:blur(2px); */
+}
+/*comienza bem -- solo selectores de class*/
+.about{
+    background-color: gray;
+    padding: 20px 50px;
+}
+.about__box{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.about__heading--xl{
+    font-size: 3em;
+    color: black;
+}
+.about__text--regular{
+    font-weight: 400;
+    font-size: 1.1em;
+    color: black;
+    margin:0 10px;
+}
+.about__img--fluid{
+    width: 300px;
+}
+.about__btn--sm{
+    width: 200px;
+    height: 20px;
+    text-align: center;
+    padding: 4px 6px;
+    background-color: beige;
+    border-radius: 4px;
+    text-decoration: none;
+
+}
+.about__box--reverse{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.about__heading--lg{
+    font-size: 2.2em;
+    color: antiquewhite;
+}
+.about__text--light{
+    font-weight: 300;
+
+}
+/* camel case -- selectores de clase y selectores ID*/
+.boxReverse{
+    /*selector de class*/
+}
+
+#textBold{
+    /*esto es un ID en camel case*/
+}
+
+/* kebab- usa guion en el medio*/
+.text-center{
+ /* kebab usa bootstrap*/
+}
+/* snake tail*/
+.text_center{
+
+}
